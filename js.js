@@ -10,16 +10,16 @@ console.log(document.getElementById("canv-wrap").clientHeight)
 
 document.ondbclick = function(){return false}
 
-var w = document.getElementById("canv-wrap").clientWidth - 20;
+var w = document.getElementById("canv-wrap").clientWidth ;
 var h = window.innerHeight -6;
 var width = w,
     height = h;
 
 var aaa = window.innerHeight;
-$(".part").css("height", aaa+20)
+$(".part").css("height", aaa+25)
 
 if(h<500){alert("MALO")}
-var titleHeight = aaa/2 - $('.name-line').height()/2;
+var titleHeight = aaa/2 - $('.name-line').height()/2 -25;
 $('.name-line').css('top', titleHeight).css('opacity', 1);
 
 
